@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Mono&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #0A0A0A;
+    scroll-behavior: smooth;
+}
+
+.font-mono {
+    font-family: 'Space Mono', monospace;
+}
+
+/* Glitch effect for profile image */
+.glitch-overlay {
+    background: linear-gradient(45deg, 
+        rgba(59, 130, 246, 0.3) 0%, 
+        rgba(16, 185, 129, 0.3) 50%, 
+        rgba(236, 72, 153, 0.3) 100%);
+    mix-blend-mode: screen;
+    transition: opacity 0.3s ease;
+}
+
+/* 3D card effect */
+.service-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.service-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* Pricing card glow effect */
+.pricing-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.pricing-card:hover::before {
+    opacity: 1;
+}
+
+/* FAQ accordion transitions */
+.faq-answer {
+    max-height: 0;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Input focus effects */
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3B82F6, #10B981, #EC4899);
+    border-radius: 4px;
+}
+
+/* Animation classes */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-card:hover .card-inner {
+        transform: none;
+    }
+    
+    .card-front, .card-back {
+        position: relative;
+        backface-visibility: visible;
+    }
+    
+    .card-back {
+        transform: none;
+        display: none;
+    }
+    
+    .service-card:hover .card-back {
+        display: block;
+    }
+}
