@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberAsad | Backend Dev • AI • Ethical Hacker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0A0A0A] text-white font-sans overflow-x-hidden">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen relative flex items-center justify-center overflow-hidden">
+            <div id="vanta-bg" class="absolute inset-0 z-0"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="relative group">
+                            <img src="https://i.ibb.co/s9YyVtFt/unnamed.png" alt="Muhammad Asad" class="w-64 h-64 rounded-full border-4 border-cyan-400 object-cover transform transition-all duration-500 group-hover:scale-105 group-hover:border-magenta-400">
+<div class="absolute inset-0 rounded-full border-4 border-transparent group-hover:border-green-400 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                        <div class="glitch-overlay absolute inset-0 opacity-0 group-hover:opacity-30"></div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4 font-mono tracking-tighter">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-green-400 to-magenta-400">CYBER</span>ASAD
+                        </h1>
+                        <div class="text-xl md:text-2xl font-light mb-8">
+                            <span class="inline-block mr-4 px-3 py-1 bg-cyan-900/30 text-cyan-400 rounded-full">Backend Architect</span>
+                            <span class="inline-block mr-4 px-3 py-1 bg-green-900/30 text-green-400 rounded-full">AI Alchemist</span>
+                            <span class="inline-block px-3 py-1 bg-magenta-900/30 text-magenta-400 rounded-full">Security Ninja</span>
+                        </div>
+                        <p class="text-lg md:text-xl max-w-2xl mb-8 opacity-90">
+                            Crafting robust, intelligent, and secure web ecosystems that push boundaries. 
+                            Specializing in high-performance backend systems, ethical penetration testing, 
+                            and AI-powered automation solutions.
+                        </p>
+                        <div class="flex gap-4 justify-center lg:justify-start">
+                            <a href="#services" class="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-medium hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                                Explore Services
+                            </a>
+                            <a href="#contact" class="px-8 py-3 border-2 border-magenta-400 rounded-full font-medium hover:bg-magenta-400/10 transition-all duration-300 transform hover:-translate-y-1">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+                <i data-feather="chevron-down" class="text-cyan-400 w-8 h-8"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold mb-16 text-center font-mono">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400">SPECIALIZED</span> SERVICES
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Backend Card -->
+                    <div class="service-card group">
+                        <div class="card-inner">
+                            <div class="card-front p-8 rounded-2xl border border-cyan-400/20 bg-gradient-to-br from-cyan-900/10 to-black/50 backdrop-blur-sm">
+                                <div class="w-16 h-16 mb-6 rounded-lg bg-cyan-400/10 flex items-center justify-center">
+                                    <i data-feather="code" class="w-8 h-8 text-cyan-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4 text-cyan-400">Backend Engineering</h3>
+                                <p class="text-gray-300 mb-6">
+                                    Architecting high-performance server infrastructures with Node.js, Python, and Go. 
+                                    Database optimization, API design, and microservices expertise.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-cyan-400"></i>
+                                        REST/GraphQL API Development
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-cyan-400"></i>
+                                        Database Architecture
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-cyan-400"></i>
+                                        Cloud Deployment (AWS/GCP)
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-back absolute inset-0 bg-gradient-to-br from-cyan-700/20 to-black/70 backdrop-blur-md rounded-2xl p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl font-bold mb-4 text-cyan-400">Technologies</h4>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">Node.js</span>
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">Python</span>
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">Go</span>
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">MongoDB</span>
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">PostgreSQL</span>
+                                    <span class="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">Redis</span>
+                                </div>
+                                <div class="relative h-2 w-full bg-cyan-900/50 rounded-full overflow-hidden mb-4">
+                                    <div class="absolute inset-y-0 left-0 w-4/5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                                </div>
+                                <p class="text-xs text-right text-cyan-400">80% of projects completed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Card -->
+                    <div class="service-card group">
+                        <div class="card-inner">
+                            <div class="card-front p-8 rounded-2xl border border-green-400/20 bg-gradient-to-br from-green-900/10 to-black/50 backdrop-blur-sm">
+                                <div class="w-16 h-16 mb-6 rounded-lg bg-green-400/10 flex items-center justify-center">
+                                    <i data-feather="cpu" class="w-8 h-8 text-green-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4 text-green-400">AI Integration</h3>
+                                <p class="text-gray-300 mb-6">
+                                    Implementing machine learning models and AI automation to supercharge your applications. 
+                                    From chatbots to predictive analytics.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                        NLP & Chatbots
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                        Computer Vision
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                        Predictive Analytics
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-back absolute inset-0 bg-gradient-to-br from-green-700/20 to-black/70 backdrop-blur-md rounded-2xl p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl font-bold mb-4 text-green-400">Technologies</h4>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">TensorFlow</span>
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">PyTorch</span>
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">OpenAI</span>
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">LangChain</span>
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">HuggingFace</span>
+                                    <span class="px-3 py-1 bg-green-400/10 text-green-400 rounded-full text-sm">Scikit-learn</span>
+                                </div>
+                                <div class="relative h-2 w-full bg-green-900/50 rounded-full overflow-hidden mb-4">
+                                    <div class="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full"></div>
+                                </div>
+                                <p class="text-xs text-right text-green-400">60% of projects completed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Card -->
+                    <div class="service-card group">
+                        <div class="card-inner">
+                            <div class="card-front p-8 rounded-2xl border border-magenta-400/20 bg-gradient-to-br from-magenta-900/10 to-black/50 backdrop-blur-sm">
+                                <div class="w-16 h-16 mb-6 rounded-lg bg-magenta-400/10 flex items-center justify-center">
+                                    <i data-feather="lock" class="w-8 h-8 text-magenta-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4 text-magenta-400">Ethical Hacking</h3>
+                                <p class="text-gray-300 mb-6">
+                                    Comprehensive security audits and penetration testing to fortify your digital assets. 
+                                    Vulnerability assessment and remediation.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-magenta-400"></i>
+                                        Penetration Testing
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-magenta-400"></i>
+                                        Security Audits
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="w-4 h-4 mr-2 text-magenta-400"></i>
+                                        Infrastructure Hardening
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-back absolute inset-0 bg-gradient-to-br from-magenta-700/20 to-black/70 backdrop-blur-md rounded-2xl p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl font-bold mb-4 text-magenta-400">Technologies</h4>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">Burp Suite</span>
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">Metasploit</span>
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">Nmap</span>
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">OWASP ZAP</span>
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">Kali Linux</span>
+                                    <span class="px-3 py-1 bg-magenta-400/10 text-magenta-400 rounded-full text-sm">Wireshark</span>
+                                </div>
+                                <div class="relative h-2 w-full bg-magenta-900/50 rounded-full overflow-hidden mb-4">
+                                    <div class="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-magenta-400 to-purple-500 rounded-full"></div>
+                                </div>
+                                <p class="text-xs text-right text-magenta-400">40% of projects completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-gradient-to-b from-[#0A0A0A] to-black/80 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center font-mono">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-magenta-400 to-cyan-400">CYBER</span>TIER PLANS
+                </h2>
+                <p class="text-xl text-center mb-16 max-w-2xl mx-auto text-gray-400">
+                    Flexible engagement models tailored to your security, infrastructure, and automation needs.
+                </p>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Standard Plan -->
+                    <div class="pricing-card transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/10">
+                        <div class="p-8 rounded-t-2xl border-t border-x border-cyan-400/20 bg-gradient-to-b from-cyan-900/10 to-transparent">
+                            <h3 class="text-2xl font-bold mb-2 text-cyan-400">STANDARD</h3>
+                            <p class="text-gray-400 mb-6">Essential backend services</p>
+                                <div class="text-4xl font-bold mb-6">$5<span class="text-lg font-normal text-gray-400">/mo</span></div>
+<ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-cyan-400"></i>
+                                    API Development
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-cyan-400"></i>
+                                    Database Design
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-cyan-400"></i>
+                                    Basic Security Audit
+                                </li>
+                                <li class="flex items-center text-gray-500">
+                                    <i data-feather="x" class="w-5 h-5 mr-3"></i>
+                                    AI Integration
+                                </li>
+                                <li class="flex items-center text-gray-500">
+                                    <i data-feather="x" class="w-5 h-5 mr-3"></i>
+                                    Full Penetration Test
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-8 pb-8 rounded-b-2xl border-b border-x border-cyan-400/20">
+                            <a href="#contact" class="block w-full py-3 px-6 bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-400 rounded-full text-center font-medium transition-colors duration-300 border border-cyan-400/30">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="pricing-card transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-green-500/10 relative z-10 scale-105">
+                        <div class="absolute -top-3 -right-3 bg-green-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                            POPULAR
+                        </div>
+                        <div class="p-8 rounded-t-2xl border-t border-x border-green-400/20 bg-gradient-to-b from-green-900/10 to-transparent">
+                            <h3 class="text-2xl font-bold mb-2 text-green-400">PRO</h3>
+                            <p class="text-gray-400 mb-6">Full-stack with AI</p>
+                            <div class="text-4xl font-bold mb-6">$50<span class="text-lg font-normal text-gray-400">/mo</span></div>
+<ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-green-400"></i>
+                                    Everything in Standard
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-green-400"></i>
+                                    AI Model Integration
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-green-400"></i>
+                                    Advanced Security
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-green-400"></i>
+                                    Performance Optimization
+                                </li>
+                                <li class="flex items-center text-gray-500">
+                                    <i data-feather="x" class="w-5 h-5 mr-3"></i>
+                                    Full Red Team Testing
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-8 pb-8 rounded-b-2xl border-b border-x border-green-400/20">
+                            <a href="#contact" class="block w-full py-3 px-6 bg-green-400/10 hover:bg-green-400/20 text-green-400 rounded-full text-center font-medium transition-colors duration-300 border border-green-400/30">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-magenta-500/10">
+                        <div class="p-8 rounded-t-2xl border-t border-x border-magenta-400/20 bg-gradient-to-b from-magenta-900/10 to-transparent">
+                            <h3 class="text-2xl font-bold mb-2 text-magenta-400">ENTERPRISE</h3>
+                            <p class="text-gray-400 mb-6">Complete cyber package</p>
+                            <div class="text-4xl font-bold mb-6">$100<span class="text-lg font-normal text-gray-400">/mo</span></div>
+<ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-magenta-400"></i>
+                                    Everything in Pro
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-magenta-400"></i>
+                                    Full Penetration Testing
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-magenta-400"></i>
+                                    Custom AI Solutions
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-magenta-400"></i>
+                                    Infrastructure Hardening
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="w-5 h-5 mr-3 text-magenta-400"></i>
+                                    24/7 Security Monitoring
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-8 pb-8 rounded-b-2xl border-b border-x border-magenta-400/20">
+                            <a href="#contact" class="block w-full py-3 px-6 bg-magenta-400/10 hover:bg-magenta-400/20 text-magenta-400 rounded-full text-center font-medium transition-colors duration-300 border border-magenta-400/30">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold mb-16 text-center font-mono">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-magenta-400">BURNING</span> QUESTIONS
+                </h2>
+                
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item overflow-hidden rounded-xl border border-gray-800 hover:border-cyan-400/30 transition-colors duration-300">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                            <span class="text-xl font-medium">What's your typical project timeline?</span>
+                            <i data-feather="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-400">
+                                Backend projects typically take 2-4 weeks for MVP, full-stack implementations 6-8 weeks, 
+                                and comprehensive security audits 1-2 weeks depending on system complexity. AI integrations 
+                                vary widely based on model training requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item overflow-hidden rounded-xl border border-gray-800 hover:border-green-400/30 transition-colors duration-300">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                            <span class="text-xl font-medium">Do you provide ongoing maintenance?</span>
+                            <i data-feather="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-400">
+                                Yes, all Enterprise plans include 24/7 monitoring and maintenance. For other tiers, 
+                                we offer optional retainer agreements starting at $500/month for 5 hours of support, 
+                                with additional hours at $120/hr.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item overflow-hidden rounded-xl border border-gray-800 hover:border-magenta-400/30 transition-colors duration-300">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                            <span class="text-xl font-medium">How do security audits work?</span>
+                            <i data-feather="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-400">
+                                Our 3-phase approach includes reconnaissance (mapping your attack surface), 
+                                vulnerability scanning (automated and manual testing), and penetration testing 
+                                (simulating real-world attacks). You receive a detailed report with risk ratings 
+                                and remediation steps.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item overflow-hidden rounded-xl border border-gray-800 hover:border-cyan-400/30 transition-colors duration-300">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left">
+                            <span class="text-xl font-medium">What tech stack do you recommend?</span>
+                            <i data-feather="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-400">
+                                For most startups: Node.js + Express + PostgreSQL/MongoDB. For high-load systems: 
+                                Go + Kafka + Redis. AI projects: Python + PyTorch/TensorFlow. We always tailor our 
+                                recommendations to your specific performance, scalability, and security requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gradient-to-b from-black/80 to-[#0A0A0A] relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto bg-black/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-10 bg-gradient-to-br from-cyan-900/10 to-magenta-900/10">
+                            <h2 class="text-3xl md:text-4xl font-bold mb-6 font-mono">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-magenta-400">CYBER</span>CONNECT
+                            </h2>
+                            <p class="text-lg mb-8 text-gray-300">
+                                Ready to discuss your project? Let's talk security, scalability, and intelligence for your digital presence.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i data-feather="mail" class="w-5 h-5 mt-1 mr-4 text-cyan-400"></i>
+                                    <div>
+                                        <h4 class="font-medium text-gray-300">Email</h4>
+                                        <a href="mailto:khanking2778@gmail.com" class="text-cyan-400 hover:underline">khanking2778@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-feather="globe" class="w-5 h-5 mt-1 mr-4 text-green-400"></i>
+                                    <div>
+                                        <h4 class="font-medium text-gray-300">Based In</h4>
+                                    <p class="text-green-400 flex items-center gap-2"><img src="https://flagcdn.com/w20/pk.png" alt="Pakistan Flag" class="w-5 h-3"> Pakistan (GMT+5)</p>
+</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-feather="clock" class="w-5 h-5 mt-1 mr-4 text-magenta-400"></i>
+                                    <div>
+                                        <h4 class="font-medium text-gray-300">Availability</h4>
+                                        <p class="text-magenta-400">24-48hr response time</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-10">
+                            <form id="contact-form" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-colors duration-300" placeholder="Your name">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition-colors duration-300" placeholder="your@email.com">
+                                </div>
+                                <div>
+                                    <label for="project" class="block text-sm font-medium text-gray-300 mb-2">Project Type</label>
+                                    <select id="project" name="project" class="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-magenta-400 focus:border-transparent transition-colors duration-300 appearance-none">
+                                        <option value="">Select one...</option>
+                                        <option value="backend">Backend Development</option>
+                                        <option value="ai">AI Integration</option>
+                                        <option value="security">Security Audit</option>
+                                        <option value="fullstack">Full Stack Project</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-colors duration-300" placeholder="Describe your project..."></textarea>
+                                </div>
+                                <button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-medium hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-300">
+                                    Send Cyber Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Initialize Vanta.js background
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3f84e5,
+            backgroundColor: 0x0a0a0a,
+            points: 10.00,
+            maxDistance: 22.00,
+            spacing: 17.00
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
